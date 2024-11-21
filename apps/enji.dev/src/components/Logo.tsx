@@ -26,14 +26,14 @@ function Logo({ active = false }: LogoProps) {
           )}
         />
       </div>
-      <div className={clsx('-mt-1 hidden text-xl', 'sm:block')}>
+      {/* <div className={clsx('-mt-1 hidden text-xl', 'sm:block')}>
         <span className={clsx('text-slate-900', 'dark:text-slate-200')}>
-          enji
+          shahin
         </span>
         <span className={clsx('text-accent-600', 'dark:text-accent-500')}>
           dev
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -17,10 +17,6 @@ module.exports = {
       return defaultValue(1.0);
     }
 
-    if (path === '/blog') {
-      return defaultValue(0.9);
-    }
-
     if (path === '/projects') {
       return defaultValue(0.9);
     }

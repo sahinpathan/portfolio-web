@@ -192,7 +192,7 @@ function Footer() {
                       title: 'Skills and Tools',
                       href: '/work/skills-and-tools',
                     },
-                    { title: 'Studio', href: '/work/studio' },
+                    // { title: 'Studio', href: '/work/studio' },
                   ]}
                 />
                 <FooterGroup
@@ -202,15 +202,15 @@ function Footer() {
                       title: 'Docs',
                       href: '/docs',
                     },
-                    {
-                      title: 'Personal Blog',
-                      href: '/blog',
-                    },
-                    {
-                      title: 'T.I.L',
-                      href: '/today-i-learned',
-                      label: 'new',
-                    },
+                    // {
+                    //   title: 'Personal Blog',
+                    //   href: '/blog',
+                    // },
+                    // {
+                    //   title: 'T.I.L',
+                    //   href: '/today-i-learned',
+                    //   label: 'new',
+                    // },
                   ]}
                 />
               </div>
@@ -245,7 +245,7 @@ function Footer() {
           )}
         >
           <div className={clsx('font-semibold')}>
-            &copy; {dayjs().format('YYYY')}, Enji Kusnadi
+            &copy; {dayjs().format('YYYY')}, shahin
           </div>
           <div className={clsx('text-slate-500', 'dark:text-slate-400')}>
             <LastUpdate />
