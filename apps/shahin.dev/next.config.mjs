@@ -32,6 +32,7 @@ const withMDX = nextMDX({
     rehypePlugins,
     providerImportSource: '@mdx-js/react',
   },
+  pagesDir: 'src/pages',
 });
 
 export default withBundleAnalyzer(withMDX(nextConfig));

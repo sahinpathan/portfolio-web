@@ -6,4 +6,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
+  rules: {
+    "no-html-link-for-pages": "off"
+  }
 };
