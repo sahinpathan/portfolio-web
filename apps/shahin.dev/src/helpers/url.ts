@@ -1,14 +1,7 @@
-export const getBaseUrl = () => {
-  switch (process.env.NEXT_PUBLIC_VERCEL_ENV) {
-    case 'production':
-      return `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
-    case 'preview':
-      return `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
-    default:
-      return `http://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
-  }
-};
-
+export function getBaseUrl() {
+  if (typeof window !== 'undefined') return window.location.origin; // Client-side
+  return process.env.NEXT_PUBLIC_VERCEL_URL || 'http://localhost:3000'; // Server-side
+}
 export const getParams = (
   obj: Record<string, string | Array<string> | undefined>
 ) =>
